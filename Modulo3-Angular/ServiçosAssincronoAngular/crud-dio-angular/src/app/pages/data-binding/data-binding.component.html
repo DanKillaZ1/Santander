@@ -1,0 +1,19 @@
+<h1 [class.text-red]="textRed" [style.font-size]="fontSize"> o nome e {{ retornaNome }}</h1> //interpolaçao
+
+<img [src]="imageUrl" [alt]="imageDesc" [style.width.px]="widthImg">
+
+<button [attr.aria.label]="buttonText"[style.backgroundColor="bgColor"]>{{ buttonText }}</button>
+
+<input #input (keyup)="clicou(input.value)">
+
+{{ input.value }}
+
+<input type="text" class="form-control" [(ngModel)]="textInput">
+<p class="text-default">{{ textInput }}</p>
+
+<app-button [btnText]="'Enviar'" [btnType]="'btn-danger'"></app-button>
+<app-button [btnText]="'Salvar'" [btnType]="'btn-success'"></app-button>
+<app-button [btnText]="'teste'" [btnType]="'btn-primary'"></app-button>
+
+
+<app-button></app-button>
